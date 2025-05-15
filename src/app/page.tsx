@@ -7,7 +7,7 @@ export default function Signup() {
   const [message, setMessage] = useState('');
 
   const handleSignup = async () => {
-    const res = await fetch('http://localhost:8080/signup', {
+    const res = await fetch('https://login-testing-backend.up.railway.app/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
